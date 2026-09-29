@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disciplina - Serviços e Programação para Internet</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <a href="#" class="logo">TMSI</a>
+        
+        <button class="menu-toggle" id="menuResponsivo" aria-label="Abrir Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        </button>
+
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="#inicio">Página Inicial</a></li>
+                <li><a href="#sobre">Sobre a Disciplina</a></li>
+                <li><a href="#servicos">Tópicos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+
+        <!-- Seção Hero / Início -->
+    <section id="inicio" class="carousel-section">
+    <div class="carousel-container">
+        <!-- Slides -->
+        <div class="carousel-slide active slide-1" >
+            <div class="hero-content">
+                <h1>Hardware</h1>
+                <p>Comprender e identificar eventuais problemas do computador.</p>
+                <a href="#contato" class="btn-primary">Mais informações</a>
+            </div>
+        </div>
+
+        <div class="carousel-slide slide-2" >
+            <div class="hero-content">
+                <h1>Design </h1>
+                <p>Conhecimento sobre programação frontend</p>
+                <a href="#servicos" class="btn-primary">Mais informações</a>
+            </div>
+        </div>
+
+        <div class="carousel-slide slide-3" >
+            <div class="hero-content">
+                <h1>Projeto Integrador</h1>
+                <p>Melhore seu ranqueamento nos buscadores e alcance mais clientes.</p>
+                <a href="#sobre" class="btn-primary">Mais informações</a>
+            </div>
+        </div>
+
+        <!-- Botões de Navegação -->
+        <button class="carousel-btn prev-btn" id="prevBtn" 
+        ><span class="botao esquerda"></span></button>
+        <button class="carousel-btn next-btn" 
+        id="nextBtn"><span class="botao direita"></span></button>
+
+        <!-- Indicadores (Bolinhas) -->
+        <div class="carousel-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+    </div>
+</section>
+
+        <!-- Seção Hardware -->
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2>Hardware</h2>
+                <div class="grid-2-cols">
+                    <div class="text-block">
+                        <p>Uso de aplicativos para identificação de hardware/drivers</p>
+                        <p>Como descobrir a marca e o modelo das placas</p>
+                    </div>
+                    <div class="stats-block">
+                        <div class="stat-card">
+                            <h3>33 horas</h3>
+                            <p>Carga Horária</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Segundo ano</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Disciplina Design -->
+        <section id="servicos" class="section bg-light">
+            <div class="container">
+                <h2>Tópicos da Disciplina</h2>
+                <div class="grid-3-cols">
+                    <div class="card">
+                        <div class="icon">💻</div>
+                        <h3>Desenvolvimento Web</h3>
+                        <p>Criação de sites totalmente responsivos.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">📱</div>
+                        <h3>UI/UX</h3>
+                        <p>Interfaces focadas na experiência do usuário para maximizar a conversão.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">🚀</div>
+                        <h3>Padrões Web</h3>
+                        <p>Conhecimento sobre diretrizes do desenvolvimento web.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="section">
+            <div class="container">
+                <h2>Mais informações Projeto Integrador</h2>
+                <form class="contact-form" id="contato-form">
+                    <div class="form-group">
+                        <label for="name">Nome completo</label>
+                        <input type="text" id="nomeInput"  placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="emailInput" id="emailInput" placeholder="seuemail@exemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="mensagemInput" rows="5" placeholder="Como podemos ajudar?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+
+
+    <!-- Rodapé Completo -->
+    <footer class="footer">
+        <div class="container grid-footer">
+            <div class="footer-col">
+                <h3>TMSI</h3>
+                <p>Curso Técnico em Manutenção e Suporte em Informática</p>
+            </div>
+        </div> <!-- Feche o grid-footer aqui -->
+
+        <div class="footer-bottom">
+            <p>&copy; 2026. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
